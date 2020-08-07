@@ -1,0 +1,25 @@
+.brand {
+    width: 72px;
+    z-index: 10;
+}
+
+$icon-size:     8rem;
+$icon-xs-size:  ($icon-size/3);
+$icon-sm-size:  ($icon-size/2);
+$icon-lg-size:  ($icon-size*2);
+
+.icon-xs {
+    width: $icon-xs-size;
+}
+
+.icon-sm {
+    width: $icon-sm-size;
+}
+
+.icon {
+    width: $icon-size;
+}
+
+.icon-lg {
+    width: $icon-lg-size;
+}
