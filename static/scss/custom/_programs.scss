@@ -1,0 +1,22 @@
+
+.programs .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.programs .header .header-image {
+    width: 234px;
+}
+
+.program-item {
+    width: 31%;
+    border: 1px solid transparent;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.program-item:hover {
+    border: 1px solid $primary;
+}

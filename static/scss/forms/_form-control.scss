@@ -2,7 +2,7 @@
 // Textual form controls
 //
 
-.form-control {
+%form-control {
   display: block;
   width: 100%;
   min-height: $input-height;
@@ -16,10 +16,14 @@
   background-clip: padding-box;
   border: $input-border-width solid $input-border-color;
   appearance: none; // Fix appearance for date inputs in Safari
+}
+
+.form-control {
+  @extend %form-control;
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
   @include border-radius($input-border-radius, 0);
-
+    
   @include box-shadow($input-box-shadow);
   @include transition($input-transition);
 
@@ -113,4 +117,23 @@
 
 .form-control-color::-webkit-color-swatch {
   @include border-radius($input-border-radius);
+}
+
+
+// Seach form controls
+.form-control-search {
+  @extend %form-control;
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: $input-border-width solid $input-border-color;
+  border-radius: none;
+  outline: none;
+
+  &:focus {
+    border-bottom: $input-border-width solid $primary;
+  }
 }

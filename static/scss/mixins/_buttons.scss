@@ -16,74 +16,58 @@
   $border-color: darken($border, 15%)
 ) {
   color: $color;
+  // box-shadow: 0 20px 48px lighten($background, 70%);
   @include gradient-bg($background);
-  border-color: $border-color;
-  @include box-shadow($btn-box-shadow);
+  // @include box-shadow($btn-box-shadow);
 
   &:hover {
     color: $hover-color;
-    @include gradient-bg($hover-background);
-    border-color: $hover-border;
+    // box-shadow: 0 4px 14px lighten($background, 75%);
+    transition: all .2s;
+    transform: translateY(-2px);
   }
 
   .btn-check:focus + &,
   &:focus {
-    color: $hover-color;
-    @include gradient-bg($hover-background);
-    border-color: $hover-border;
-    @if $enable-shadows {
-      @include box-shadow($btn-box-shadow, 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5));
-    } @else {
-      // Avoid using mixin so we can pass custom focus shadow properly
-      box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5);
-    }
+    // color: $hover-color;
+    // @include gradient-bg($hover-background);
+    // border-color: $hover-border;
+    // @if $enable-shadows {
+    //   @include box-shadow($btn-box-shadow, 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5));
+    // } @else {
+    //   // Avoid using mixin so we can pass custom focus shadow properly
+    //   box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5);
+    // }
   }
 
   .btn-check:checked + &,
   .btn-check:active + &,
   &:active,
-  &.active,
-  .show > &.dropdown-toggle {
-    color: $active-color;
-    background-color: $active-background;
-    // Remove CSS gradients if they're enabled
-    background-image: if($enable-gradients, none, null);
-    border-color: $active-border;
-
+  &.active {
     &:focus {
-      @if $enable-shadows {
-        @include box-shadow($btn-active-box-shadow, 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5));
-      } @else {
-        // Avoid using mixin so we can pass custom focus shadow properly
-        box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5);
-      }
+      transition: all .2s;
+      transform: translateY(0);
     }
   }
 
-  &:disabled,
-  &.disabled {
-    color: $color;
-    background-color: $background;
-    // Remove CSS gradients if they're enabled
-    background-image: if($enable-gradients, none, null);
-    border-color: $border;
-  }
 }
 
-@mixin button-outline-variant(
+@mixin button-ghost-variant(
   $color,
   $color-hover: $color,
-  $active-background: lighten($color, 65%),
+  $background: lighten($color, 30%),
+  $active-background: darken(lighten($color, 40%), 5%),
   $active-border: $color,
   $active-color: color-contrast($active-background)
 ) {
   color: $color;
-  border-color: $color;
+  border: 2px solid $gray-200;
+  background: transparent;
 
   &:hover {
     color: $color-hover;
+    border: 2px solid $color-hover;
     background-color: $active-background;
-    border-color: $active-border;
   }
 
   .btn-check:focus + &,
@@ -96,7 +80,6 @@
   &:active,
   &.active,
   &.dropdown-toggle.show {
-    color: $active-color;
     background-color: $active-background;
     border-color: $active-border;
 

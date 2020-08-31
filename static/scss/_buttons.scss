@@ -16,6 +16,7 @@
   user-select: none;
   background-color: transparent;
   border: $btn-border-width solid transparent;
+  position: relative;
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
   @include transition($btn-transition);
 
@@ -26,19 +27,18 @@
 
   .btn-check:focus + &,
   &:focus {
-    outline: 0;
-    box-shadow: $btn-focus-box-shadow;
+    outline: none;
   }
 
   .btn-check:checked + &,
   .btn-check:active + &,
   &:active,
   &.active {
-    @include box-shadow($btn-active-box-shadow);
+    // @include box-shadow($btn-active-box-shadow);
 
-    &:focus {
-      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
-    }
+    // &:focus {
+    //   @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    // }
   }
 
   &:disabled,
@@ -62,8 +62,8 @@
 }
 
 @each $color, $value in $theme-colors {
-  .btn-outline-#{$color} {
-    @include button-outline-variant($value);
+  .btn-ghost-#{$color} {
+    @include button-ghost-variant($value);
   }
 }
 
@@ -121,4 +121,8 @@
   + .btn-block {
     margin-top: $btn-block-spacing-y;
   }
+}
+
+a {
+  text-decoration: none !important;
 }

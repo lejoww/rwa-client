@@ -1,61 +1,64 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
-import Overlay from '../components/overlay'
-import zigzag from '../../static/img/textures/zigzag-lines.jpg'
-import logo from '../../static/img/brand/default-monochrome-black.svg'
+import { authenticateUser } from '../services/authentication'
 
-import axios from 'axios'
+import logo from '../../static/img/brand/default-monochrome-black.svg'
+import artboard from '../../static/img/textures/login-artboard.svg'
+import axiosAPI, { setNewHeaders } from '../services/requests'
 
 const Login = () => {
     const history = useHistory()
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    const [isLogged, setLogged] = useState(localStorage.getItem('authtoken') ? true : false)
+    const [isLogged, setLogged] = useState(localStorage.getItem('access_token') ? true : false)
     const [isWrong, setWrong] = useState(false)
-
-    useEffect(() => {
-        if (isLogged) {
-            history.push('/app')
-        }
-    })
 
     const handleUsernameInput = (e) => setUsername(e.target.value)
     const handlePasswordInput = (e) => setPassword(e.target.value)
 
+    useEffect(() => {
+        if (isLogged) {
+            window.location.reload(false)
+        }
+    })
+
     const handleLogin = () => {
-        axios({
-            method: 'post',
-            url: 'http://127.0.0.1:8000/token-auth/',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            data: {
-                username: username,
-                password: password
-            }
-        })
-        .then(res => {
+        authenticateUser(username, password)
+        .then((response) => {
+            setNewHeaders(response.data)
             setLogged(true)
+            axiosAPI.post('api/v1/users/user/', {
+                username: username
+            })
+            .then((account) => {
+                localStorage.setItem('user', JSON.stringify(account.data))
+            })
+            .catch((err) => {
+                setWrong(true)
+                throw new Error(`Account data obtain failed: ${err}`)
+            })
         })
-        .catch(err => {
+        .catch((err) => {
             setWrong(true)
-            console.log(err)
+            throw new Error(`Authentication failed: ${err}`)
         })
     }
 
     return (
-        <div className="container-fluid" style={{padding: 0}}>
+        <div className="container-fluid login-overflow" style={{padding: 0}}>
             <div className="vw-100 vh-100 row">
                 <div className={`alert alert-danger ${isWrong ? 'alert-active' : ''}`}>
                     Oops! Something's gone wrong, check your data
                 </div>
-                <div className="login-ad col-4 vh-100" style={{backgroundImage: `url(${zigzag})`}}></div>
-                <div className="login-form col-8 d-flex align-items-center justify-content-center position-relative">
+                <div className="login-ad col-4 vh-100 d-none d-md-block" style={{backgroundImage: `url(${artboard})`}}></div>
+                <div className="login-form col-12 col-md-8 d-flex align-items-center justify-content-center position-relative">
                     <div className="form-header w-100 position-absolute d-flex justify-content-between align-items-center sticky-top p-2">
                         <img className="ml-2 brand" src={logo}/>
                         <div className="registration-ad">
                             <small className="text-muted">No registered yet?</small>
-                            <button className="btn btn-outline-dark ml-3">Get started</button>
+                            <button className="btn btn-dark ml-3" onClick={() => {history.push('/register')}}>
+                                Get started
+                            </button>
                         </div>
                     </div>
                     <section className="w-50 wrapper">
@@ -70,7 +73,6 @@ const Login = () => {
                                 id="username" 
                                 className="form-control" 
                                 spellCheck="false" 
-                                autoComplete="off"
                                 onChange={handleUsernameInput}
                             />
                         </div>
@@ -83,7 +85,7 @@ const Login = () => {
                                 onChange={handlePasswordInput}
                             />
                         </div>
-                        <button className="btn btn-success mt-3" onClick={handleLogin}>Continue</button>
+                        <button className="btn btn-primary mt-3" onClick={handleLogin}>Continue</button>
                     </section>
                 </div>
             </div>

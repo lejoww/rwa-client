@@ -1,8 +1,41 @@
 
+.profile-content {
+    // width: 286px;
+}
+
+.profile-cover {
+    width: 100%;
+    height: 98px;
+    background-size: cover;
+}
+
+.profile-image {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto;
+    position: relative;
+    background-size: cover;
+    border-radius: 92px;
+    border: 3px solid $white;
+    top: 2rem;
+}
+
 .profile-button {
     width: 40px;
     height: 40px;
     border-radius: 40px;
     background: #000;
     border: none;
+}
+
+.profile-complete-ad {
+
+}
+
+.profile-complete-ad .ad-image {
+    width: 267px;
+}
+
+.dropdown-menu .dropdown-item {
+    cursor: pointer;
 }

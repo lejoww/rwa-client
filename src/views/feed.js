@@ -1,16 +1,18 @@
 import React from 'react'
+import { Animated } from 'react-animated-css'
 import { useHistory } from 'react-router-dom'
+import Greeting from '../components/greeting'
 
 const Feed = () => {
     const history = useHistory()
-    const handleRedirection = () => {
-        history.push('/app/devices')
-    }
 
     return (
-        <div>
-            <button onClick={handleRedirection}>Redirect</button>
-            <h1>You're in feed</h1>
+        <div className="row g-0">
+            <div className="col-8">
+                <div className="px-5 py-5">
+                    <Greeting/>
+                </div>
+            </div>
         </div>
     )
 }

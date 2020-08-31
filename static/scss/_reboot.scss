@@ -98,6 +98,7 @@ hr:not([size]) {
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
   color: $headings-color;
+  opacity: .85;
   letter-spacing: -0.5px;
 }
 

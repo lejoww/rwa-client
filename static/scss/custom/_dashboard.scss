@@ -1,0 +1,65 @@
+
+.sidebar-main {
+    // background: rgb(230,230,230);
+    // background: -moz-linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+    // background: -webkit-linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+    // background: linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6e6e6",endColorstr="#ffffff",GradientType=1);    
+}
+
+.container-fluid {
+    // background: rgb(224,224,224);
+    // background: -moz-linear-gradient(0deg, rgba(224,224,224,1) 0%, rgba(249,249,249,1) 100%);
+    // background: -webkit-linear-gradient(0deg, rgba(224,224,224,1) 0%, rgba(249,249,249,1) 100%);
+    // background: linear-gradient(0deg, rgba(224,224,224,1) 0%, rgba(249,249,249,1) 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0e0e0",endColorstr="#f9f9f9",GradientType=1);
+    background-color: $black;
+}
+
+.dashboard-main {
+    background: $gray-100;
+}
+
+@media screen and (max-width: map-get($grid-breakpoints, md)) {
+    .dashboard-main {
+        border-top-left-radius: 0;
+    }
+}
+
+// cards 
+
+.feed-card {
+    width: 325px;
+    padding: 1rem;
+    // transition: all .5s;
+}
+
+// onboarding
+
+.onboarding-container {
+    width: 50%;
+}
+
+.onboarding-container .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.onboarding-container .header .doodle {
+    width: 264px;
+    position: relative;
+    z-index: 1000;
+    // bottom: -61px;
+}
+
+.onboarding-steps {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+}
+
+.step-icon {
+    fill: $gray-600;
+}

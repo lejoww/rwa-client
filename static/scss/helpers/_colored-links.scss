@@ -1,6 +1,8 @@
 @each $color, $value in $theme-colors {
   .link-#{$color} {
     color: $value;
+    padding: 4px 0;
+    border-bottom: 1px solid $value;
 
     @if $emphasized-link-hover-darken-percentage != 0 {
       &:hover,

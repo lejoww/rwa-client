@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="503" height="750" viewBox="0 0 503 750">
+  <defs>
+    <clipPath id="clip-login-artboard">
+      <rect width="503" height="750"/>
+    </clipPath>
+  </defs>
+  <g id="login-artboard" clip-path="url(#clip-login-artboard)">
+    <rect width="503" height="750" fill="rgba(255,255,255,0)"/>
+    <g id="BACKGROUND_2" data-name="BACKGROUND 2" transform="translate(0 1442) rotate(-90)">
+      <g id="Grupo_3" data-name="Grupo 3">
+        <rect id="Rectángulo_1" data-name="Rectángulo 1" width="750" height="500" transform="translate(692)" fill="#fce9d0"/>
+        <g id="Grupo_2" data-name="Grupo 2">
+          <rect id="Rectángulo_2" data-name="Rectángulo 2" width="125" height="125" transform="translate(1067 375)" fill="#fce9d0"/>
+          <path id="Rectángulo_3" data-name="Rectángulo 3" d="M0,0H125a0,0,0,0,1,0,0V0A125,125,0,0,1,0,125H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1067 375)" fill="#080708"/>
+          <path id="Trazado_91" data-name="Trazado 91" d="M0,0H125V125H0Z" transform="translate(692)" fill="#080708"/>
+          <rect id="Rectángulo_5" data-name="Rectángulo 5" width="125" height="125" transform="translate(817)" fill="#3b60e4"/>
+          <rect id="Rectángulo_6" data-name="Rectángulo 6" width="125" height="125" transform="translate(942)" fill="#fce9d0"/>
+          <rect id="Rectángulo_7" data-name="Rectángulo 7" width="125" height="125" transform="translate(1067)" fill="#3b60e4"/>
+          <rect id="Rectángulo_8" data-name="Rectángulo 8" width="125" height="125" transform="translate(1192)" fill="#080708"/>
+          <path id="Trazado_86" data-name="Trazado 86" d="M0,0H125V125H0Z" transform="translate(1317)" fill="#3b60e4"/>
+          <rect id="Rectángulo_10" data-name="Rectángulo 10" width="125" height="125" transform="translate(692 125)" fill="#3b60e4"/>
+          <rect id="Rectángulo_11" data-name="Rectángulo 11" width="125" height="125" transform="translate(817 125)" fill="#3b60e4"/>
+          <rect id="Rectángulo_12" data-name="Rectángulo 12" width="125" height="125" transform="translate(942 125)" fill="#fce9d0"/>
+          <rect id="Rectángulo_13" data-name="Rectángulo 13" width="62.933" height="62.933" transform="translate(1004.5 143) rotate(45)" fill="#3b60e4"/>
+          <rect id="Rectángulo_14" data-name="Rectángulo 14" width="33.941" height="33.941" rx="16.971" transform="translate(1004.5 163.5) rotate(45)" fill="#080708"/>
+          <rect id="Rectángulo_15" data-name="Rectángulo 15" width="125" height="125" transform="translate(1067 125)" fill="#080708"/>
+          <rect id="Rectángulo_16" data-name="Rectángulo 16" width="125" height="125" transform="translate(1192 125)" fill="#3b60e4"/>
+          <rect id="Rectángulo_17" data-name="Rectángulo 17" width="125" height="125" transform="translate(1317 125)" fill="#fce9d0"/>
+          <rect id="Rectángulo_18" data-name="Rectángulo 18" width="55.667" height="55.667" transform="translate(1351.667 159.667)" fill="#ef3581"/>
+          <rect id="Rectángulo_19" data-name="Rectángulo 19" width="125" height="125" transform="translate(692 250)" fill="#fce9d0"/>
+          <rect id="Rectángulo_20" data-name="Rectángulo 20" width="57.667" height="57.667" transform="translate(725.667 283.667)" fill="#ef3581"/>
+          <rect id="Rectángulo_21" data-name="Rectángulo 21" width="125" height="125" transform="translate(817 250)" fill="#3b60e4"/>
+          <path id="Trazado_88" data-name="Trazado 88" d="M0,0H125V125H0Z" transform="translate(942 250)" fill="#080708"/>
+          <rect id="Rectángulo_23" data-name="Rectángulo 23" width="125" height="125" transform="translate(1067 250)" fill="#3b60e4"/>
+          <rect id="Rectángulo_24" data-name="Rectángulo 24" width="93" height="93" transform="translate(1083 266)" fill="#080708"/>
+          <rect id="Rectángulo_25" data-name="Rectángulo 25" width="47" height="47" transform="translate(1106 289)" fill="#fce9d0"/>
+          <rect id="Rectángulo_26" data-name="Rectángulo 26" width="125" height="125" transform="translate(1192 250)" fill="#fce9d0"/>
+          <path id="Trazado_85" data-name="Trazado 85" d="M0,0H125V125H0Z" transform="translate(1317 250)" fill="#3b60e4"/>
+          <path id="Trazado_87" data-name="Trazado 87" d="M0,0H125V125H0Z" transform="translate(692 375)" fill="#3b60e4"/>
+          <path id="Trazado_89" data-name="Trazado 89" d="M0,0H125V125H0Z" transform="translate(817 375)" fill="#080708"/>
+          <rect id="Rectángulo_30" data-name="Rectángulo 30" width="125" height="125" transform="translate(942 375)" fill="#ef3581"/>
+          <path id="Rectángulo_31" data-name="Rectángulo 31" d="M0,0H125a0,0,0,0,1,0,0V125a0,0,0,0,1,0,0h-8A117,117,0,0,1,0,8V0A0,0,0,0,1,0,0Z" transform="translate(942 375)" fill="#080708"/>
+          <rect id="Rectángulo_32" data-name="Rectángulo 32" width="125" height="125" transform="translate(1192 375)" fill="#080708"/>
+          <rect id="Rectángulo_33" data-name="Rectángulo 33" width="125" height="125" transform="translate(1317 375)" fill="#fce9d0"/>
+          <path id="Trazado_1" data-name="Trazado 1" d="M692,0,817,125V0Z" fill="#ef3581"/>
+          <path id="Trazado_2" data-name="Trazado 2" d="M1067,125l125,125V125Z" fill="#ef3581"/>
+          <path id="Trazado_3" data-name="Trazado 3" d="M1067,375,942,250V375Z" fill="#fce9d0"/>
+          <path id="Trazado_4" data-name="Trazado 4" d="M1018,375l-76-76v76Z" fill="#3b60e4"/>
+          <circle id="Elipse_1" data-name="Elipse 1" cx="62.5" cy="62.5" r="62.5" transform="translate(942 0)" fill="#f7b584"/>
+          <circle id="Elipse_2" data-name="Elipse 2" cx="44.5" cy="44.5" r="44.5" transform="translate(1335 393)" fill="#f7b584"/>
+          <path id="Trazado_5" data-name="Trazado 5" d="M877.33.04V124.96a62.5,62.5,0,0,1,0-124.92Z" fill="#f7b584"/>
+          <path id="Trazado_6" data-name="Trazado 6" d="M942,.04V124.96A62.5,62.5,0,0,1,942,.04Z" fill="#fce9d0"/>
+          <path id="Trazado_7" data-name="Trazado 7" d="M1441.96,125H1317.04a62.5,62.5,0,0,1,124.92,0Z" fill="#fce9d0"/>
+          <path id="Trazado_8" data-name="Trazado 8" d="M1441.96,60.37H1317.04a62.5,62.5,0,0,1,124.92,0Z" fill="#080708"/>
+          <path id="Trazado_9" data-name="Trazado 9" d="M817.04,125H941.96a62.5,62.5,0,0,1-124.92,0Z" fill="#fce9d0"/>
+          <path id="Trazado_10" data-name="Trazado 10" d="M817.04,314.67H941.96a62.5,62.5,0,0,1-124.92,0Z" fill="#fce9d0"/>
+          <path id="Trazado_11" data-name="Trazado 11" d="M941.96,250H817.04a62.5,62.5,0,0,1,124.92,0Z" fill="#fce9d0"/>
+          <path id="Trazado_12" data-name="Trazado 12" d="M817.04,250H941.96a62.5,62.5,0,0,1-124.92,0Z" fill="#fce9d0"/>
+          <path id="Trazado_13" data-name="Trazado 13" d="M910.73,250H848.27a31.249,31.249,0,0,1,62.46,0Z" fill="#080708"/>
+          <path id="Trazado_14" data-name="Trazado 14" d="M848.27,250h62.46a31.249,31.249,0,0,1-62.46,0Z" fill="#3b60e4"/>
+          <path id="Trazado_15" data-name="Trazado 15" d="M848.27,124.96h62.46a31.249,31.249,0,0,1-62.46,0Z" fill="#3b60e4"/>
+          <circle id="Elipse_3" data-name="Elipse 3" cx="38.167" cy="38.167" r="38.167" transform="translate(966.333 24.333)" fill="#ef3581"/>
+          <circle id="Elipse_4" data-name="Elipse 4" cx="18.5" cy="18.5" r="18.5" transform="translate(986 44)" fill="#080708"/>
+          <path id="Trazado_16" data-name="Trazado 16" d="M1317,375V250h125Z" fill="#f7b584"/>
+          <path id="Trazado_17" data-name="Trazado 17" d="M817,500V375H942Z" fill="#f7b584"/>
+          <path id="Trazado_18" data-name="Trazado 18" d="M817,500H692V375Z" fill="#080708"/>
+          <rect id="Rectángulo_34" data-name="Rectángulo 34" width="48.75" height="48.75" transform="translate(1067 375) rotate(90)" fill="#ef3581"/>
+          <rect id="Rectángulo_35" data-name="Rectángulo 35" width="48.75" height="48.75" transform="translate(1115.75 375) rotate(90)" fill="#f7b584"/>
+          <path id="Rectángulo_36" data-name="Rectángulo 36" d="M0,0H125a0,0,0,0,1,0,0V0A125,125,0,0,1,0,125H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1192 125) rotate(-180)" fill="#ef3581"/>
+          <path id="Rectángulo_37" data-name="Rectángulo 37" d="M0,0H0A125,125,0,0,1,125,125v0a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1192 0)" fill="#ef3581"/>
+          <path id="Rectángulo_38" data-name="Rectángulo 38" d="M0,0H125a0,0,0,0,1,0,0V0A125,125,0,0,1,0,125H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1192 125)" fill="#fce9d0"/>
+          <path id="Rectángulo_39" data-name="Rectángulo 39" d="M0,0H125a0,0,0,0,1,0,0V0A125,125,0,0,1,0,125H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1192 375)" fill="#f7b584"/>
+          <path id="Rectángulo_40" data-name="Rectángulo 40" d="M0,0H83a0,0,0,0,1,0,0V0A83,83,0,0,1,0,83H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1192 375)" fill="#fce9d0"/>
+          <path id="Rectángulo_41" data-name="Rectángulo 41" d="M0,0H125a0,0,0,0,1,0,0V0A125,125,0,0,1,0,125H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(692 125)" fill="#fce9d0"/>
+          <path id="Rectángulo_42" data-name="Rectángulo 42" d="M0,0H82.667a0,0,0,0,1,0,0V0A82.667,82.667,0,0,1,0,82.667H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(692 125)" fill="#1e263f"/>
+          <path id="Rectángulo_43" data-name="Rectángulo 43" d="M0,0H47a0,0,0,0,1,0,0V0A47,47,0,0,1,0,47H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(692 125)" fill="#3b60e4"/>
+          <circle id="Elipse_5" data-name="Elipse 5" cx="71.5" cy="71.5" r="71.5" transform="translate(1120.5 53.5)" fill="#3b60e4"/>
+          <circle id="Elipse_6" data-name="Elipse 6" cx="54.5" cy="54.5" r="54.5" transform="translate(1137.5 70.5)" fill="#fce9d0"/>
+          <circle id="Elipse_7" data-name="Elipse 7" cx="36" cy="36" r="36" transform="translate(1156 89)" fill="#080708"/>
+          <rect id="Rectángulo_44" data-name="Rectángulo 44" width="47" height="47" transform="translate(1231 289)" fill="#3b60e4"/>
+          <circle id="Elipse_8" data-name="Elipse 8" cx="21" cy="21" r="21" transform="translate(1358.5 416.5)" fill="#080708"/>
+          <path id="Trazado_90" data-name="Trazado 90" d="M0,0H62.5V62.5H0Z" transform="translate(754.5 375)" fill="#080708"/>
+          <rect id="Rectángulo_46" data-name="Rectángulo 46" width="62.5" height="62.5" transform="translate(1317 250)" fill="#3b60e4"/>
+          <rect id="Rectángulo_47" data-name="Rectángulo 47" width="48.333" height="48.333" transform="translate(980.333 288.333)" fill="#fce9d0"/>
+          <g id="Grupo_1" data-name="Grupo 1">
+            <path id="Trazado_19" data-name="Trazado 19" d="M901.583,415.417l-44.166,44.166a31.249,31.249,0,0,1,44.166-44.166Z" fill="#080708"/>
+            <path id="Trazado_20" data-name="Trazado 20" d="M857.417,459.583l44.166-44.166a31.249,31.249,0,0,1-44.166,44.166Z" fill="#3b60e4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
