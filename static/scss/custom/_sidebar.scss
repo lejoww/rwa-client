@@ -67,8 +67,8 @@
 .sidebar-profile .picture-container {
     width: 45px;
     height: 45px;
-    background-position: top;
-    background-size: 145px;
+    background-position: center;
+    background-size: cover;
     border: 1px solid $dark;
     border-radius: $border-radius;
 }

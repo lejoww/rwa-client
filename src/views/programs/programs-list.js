@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import ProgramItem from '../../components/programs/program-item'
 import swinging from '../../../static/img/doodles/SwingingDoodle.png'
 
@@ -41,17 +42,25 @@ const ProgramsList = () => {
         }
     ]
 
+    let [selectedProgram, setSelectedProgram] = useState({})
+
+    const handleProgramSelection = (data) => {
+        setSelectedProgram(data)
+    }
+
     return (
         <div className="programs px-5">
-            <ProgramModal/>
+            <ProgramModal program={selectedProgram}/>
             <div className="header">
                 <div>
                     <div className="d-flex align-items-end">
                         <h1>Programs</h1>
                         <p>
-                            <a href="#" className="link-primary ml-5">
-                               <UilPlus size="16"className="mr-1"/>
-                                Create a new program
+                            <a className="link-primary ml-5">
+                                <Link to="/editor/build">
+                                    <UilPlus size="16"className="mr-1"/>
+                                    Create a new program
+                                </Link>
                             </a>
                         </p>
                     </div>
@@ -68,12 +77,15 @@ const ProgramsList = () => {
             </p>
             <div className="w-100 d-flex flex-wrap">
                 {
-                    programs.map(item => {
+                    programs.map((item, i) => {
                         return ( 
                             <ProgramItem 
+                                key={i}
                                 icon={item.icon} 
                                 name={item.name} 
                                 abstract={item.abstract}
+                                isModifiable={true}
+                                onChangeSelectedProgram={handleProgramSelection}
                             />
                         )
                     })

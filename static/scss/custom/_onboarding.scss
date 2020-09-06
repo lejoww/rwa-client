@@ -1,0 +1,29 @@
+// onboarding
+
+.onboarding-container {
+    width: 50%;
+}
+
+.onboarding-container .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.onboarding-container .header .doodle {
+    width: 264px;
+    position: relative;
+    z-index: 1000;
+    // bottom: -61px;
+}
+
+.onboarding-steps {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+}
+
+.step-icon {
+    fill: $gray-600;
+}

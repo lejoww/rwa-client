@@ -20,3 +20,40 @@
 .program-item:hover {
     border: 1px solid $primary;
 }
+
+.program-selector {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.program-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.program-list-item {
+    width: 100%;
+    height: auto;
+}
+
+.program-list-item a{
+    padding: .4rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: $border-radius;
+    transition: all 100ms ease-in-out;
+    color: $black;
+}
+
+.program-list-item a:hover {
+    background-color: lighten($primary, 40%);
+    color: $primary;
+}
+
+// modal
+.program-modal {
+    padding: 1rem;
+}

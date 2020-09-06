@@ -1,6 +1,4 @@
 import React from 'react';
-import city from '../../static/img/pictures/zap-in-city.jpg';
-import profile from '../../static/img/profile/avatar-circle.png';
 import swinging from '../../static/img/doodles/SwingingDoodle.png';
 import axiosAPI from '../services/requests';
 
@@ -14,11 +12,11 @@ const Profile = () => {
 					<section className="w-100 profile-content d-inline-block rounded border overflow-hidden">
 						<div
 							className="profile-cover"
-							style={{ backgroundImage: `url(${city})` }}
+							style={{ backgroundImage: `url()` }}
 						>
 							<div
 								className="profile-image"
-								style={{ backgroundImage: `url(${profile})` }}
+								style={{ backgroundImage: `url()` }}
 							></div>
 						</div>
 						<div className="mt-5 px-3">

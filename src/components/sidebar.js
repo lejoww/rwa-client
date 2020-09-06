@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import logo from '../../static/img/brand/default-monochrome-black.svg'
-import sitting from '../../static/img/doodles/SittingDoodle.png'
+import woman from '../../static/img/profile/Woman.png'
 import UilHouseUser from '@iconscout/react-unicons/icons/uil-house-user'
 import UilTachometerFastAlt from '@iconscout/react-unicons/icons/uil-tachometer-fast-alt'
 import UilRobot from '@iconscout/react-unicons/icons/uil-robot'
@@ -97,7 +97,7 @@ const Sidebar = (props) => {
                     </ul>
                 </div>
                 <div className="sidebar-profile">
-                    <div className="picture-container" style={{backgroundImage: `url(${sitting})`}}></div>
+                    <div className="picture-container" style={{backgroundImage: `url(${woman})`}}></div>
                     <div className="ml-3">
                         <p className="m-0 font-weight-bolder">{name}</p>
                         <p className="m-0 small" style={{opacity: .5}}>

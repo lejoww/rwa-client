@@ -7,8 +7,7 @@ import {
 } from 'react-router-dom'
 import Login from '../views/login'
 import Register from '../views/register'
-import Dashboard from '../views/dashboard'
-import Buttons from '../views/buttons'
+import Dashboard from '../views/main/dashboard'
 import OnBoarding from '../views/onboarding'
 
 const App = () => {
@@ -23,9 +22,6 @@ const App = () => {
                 <Route exact path="/onboarding">
                     <OnBoarding/>
                 </Route>
-                <Route exact path="/buttons">
-                    <Buttons/>
-                </Route>
                 <Route exact path="">
                     {
                         token ? (
@@ -36,9 +32,6 @@ const App = () => {
                     }
                     {/* <Dashboard/> */}
                 </Route>
-                {/* <Route path="/setup">
-                    <Setup/>
-                </Route> */}
             </Switch>
         </Router>
     )

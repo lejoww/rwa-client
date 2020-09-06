@@ -1,7 +1,7 @@
 import React from 'react'
 import { Animated } from 'react-animated-css'
 import { useHistory } from 'react-router-dom'
-import Greeting from '../components/greeting'
+import Greeting from '../../components/greeting'
 
 const Feed = () => {
     const history = useHistory()
